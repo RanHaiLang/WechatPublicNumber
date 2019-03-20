@@ -1,0 +1,227 @@
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* LAYOUT SPECIFIC STYLES */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: Microsoft Yahei, sans-serif;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.yinhuan-list {
+    width: 100%;
+    margin: 0.13333rem 0 0.13333rem;
+}
+
+.yinhuan-list .item {
+    background: #fff;
+    font-size: 0.37333rem;
+    min-height: 0.53333rem;
+    color: #666;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding-left: 0.42667rem;
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+}
+
+.yinhuan-list .item span.name {
+    width: 2.4rem;
+    text-align: left;
+    display: table-cell;
+}
+
+.yinhuan-list .item span.value {
+    width: calc(100% - px2rem(84px));
+    text-align: right;
+    display: table-cell;
+    padding-right: 0.13333rem;
+}
+
+.img-content {
+    width: 100%;
+    margin: 0.13333rem 0 0.13333rem;
+    overflow: hidden;
+}
+
+.img-content .content-inner {
+    padding-left: 0.42667rem;
+}
+
+.img-content .content-inner .img-wrap {
+    width: 90px;
+    height: 90px;
+    table-layout: fixed;
+    display: table;
+    overflow: hidden;
+    float: left;
+    margin-right: 4px;
+}
+
+.img-content .content-inner .img-wrap a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 0;
+}
+
+.img-content .content-inner .img-wrap a img {
+    width: auto;
+    height: auto;
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.time-wrap {
+    padding: 0 0.42667rem 0.42667rem 0.42667rem;
+}
+
+.time-wrap .time-title {
+    font-size: 0.42667rem;
+    color: #488aff;
+    line-height: 0.53333rem;
+}
+
+.time-wrap .time-content {
+    font-size: 0.37333rem;
+    margin-top: 0.26667rem;
+    margin-left: 1.33333rem;
+}
+
+.time-wrap .time-content .time-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.time-wrap .time-content .time-item.active .icon {
+    color: #488aff;
+}
+
+.time-wrap .time-content .left {
+    width: 0.37333rem;
+    top: 0;
+    bottom: 0;
+    float: left;
+    position: absolute;
+}
+
+.time-wrap .time-content .left .line {
+    width: 0.02667rem;
+    height: 100%;
+    background-color: #949494;
+    margin: 0 auto;
+}
+
+.time-wrap .time-content .left .icon {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.time-wrap .time-content .left .icon img {
+    width: 0.37333rem;
+    height: 0.37333rem;
+}
+
+.time-wrap .time-content .right {
+    width: calc(100% - px2rem(14px));
+    float: left;
+    color: #666;
+    font-size: 0.37333rem;
+    line-height: 0.42667rem;
+    padding-left: 0.53333rem;
+}
+
+.time-wrap .time-content .right .name {
+    font-size: 0.42667rem;
+    line-height: 0.53333rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.time-wrap .time-content .right p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    padding-bottom: 0.42667rem;
+}

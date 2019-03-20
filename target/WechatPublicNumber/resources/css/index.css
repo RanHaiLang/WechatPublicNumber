@@ -1,0 +1,107 @@
+.hidden {display: none !important;visibility: hidden !important;}
+.clearfix:before,  
+.clearfix:after{  
+    content: '.';  
+    display: block;  
+    overflow: hidden;  
+    visibility: hidden;  
+    font-size: 0;  
+    line-height: 0;  
+    width: 0;  
+    height: 0;  
+}  
+.clearfix:after{ clear: both;  }
+.clearfix{ zoom: 1;  }  
+a{text-decoration:none;}
+
+/* LAYOUT SPECIFIC STYLES */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: Microsoft Yahei, sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+html{
+width: 100%;
+height: 100%; 	
+}
+
+
+.input-content {
+margin: -1px 0 0.85333rem; }
+.input-content > .input-item:first-child {
+  border-top: 0.02667rem solid #c8c7cc; }
+.input-content > .input-item:last-child {
+  border-bottom: 0.02667rem solid #c8c7cc; }
+  .input-content > .input-item:last-child .item-inner {
+	border-bottom: 0; }
+.input-content .input-item {
+  font-size: 0.45333rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.42667rem;
+  background-color: #fff;
+  position: relative; }
+  .input-content .input-item .item-inner {
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 0.21333rem 0 0;
+	border-bottom: 1px solid #c8c7cc;
+	position: relative;
+  }
+	.input-content .input-item .item-inner .input-label {
+	  position: absolute;
+	  height: 1.38667rem;
+	  line-height: 1.38667rem;
+	  left: 0;
+	  top: 0; }
+	.input-content .input-item .item-inner input {
+	  width: 100%;
+	  border: none;
+	  height: 0.8rem;
+	  line-height: 0.8rem;
+	  padding: 0.29333rem 0.26667rem;
+	  outline: none;
+	  text-indent: 2.66667rem;
+	  font-size: 0.45333rem;
+      box-sizing: content-box;
+    }
+
+.button-wrap {
+padding: 0.42667rem; }
+.button-wrap button {
+  width: 100%;
+  padding: 0 0.45333rem;
+  margin: 0.10667rem 0.05333rem;
+  background-color: #488aff;
+  color: #fff;
+  font-size: 0.42667rem;
+  height: 1.17333rem;
+  border: none;
+  outline: none; }
